@@ -1,8 +1,5 @@
 
-import { Fooster} from './fooster';
-import { Header} from './header';
-import { Body} from './body';
-
+import { Fooster, Header, Body} from './';
 
 export interface Card {
 	header: Header,
