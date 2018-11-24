@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Fooster } from '../../model/fooster';
 
 @Component({
   selector: 'app-fooster',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoosterComponent implements OnInit {
 
-  public title: string = 'Escrito por Disney'
+  public fooster: Fooster= { title:'Escrito por Disney'}
 
   constructor() {}
 
