@@ -10,7 +10,7 @@ export class BodyComponent implements OnInit {
 
    @Input() body: Body;
 
-  public title_button: string = 'Siguiente';
+  @Input() title_button: string;
 
   constructor() {}
 
