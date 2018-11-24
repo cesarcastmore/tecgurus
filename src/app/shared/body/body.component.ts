@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
 
-  constructor() { }
+  public body: any = {
+    title: 'La bella y la Bestia',
+    description: 'Esta es una historia romatica de una linda mujer y un hombre en forma de lobo'
+  };
 
-  ngOnInit() {
-  }
+  public title_button: string = 'Siguiente';
+
+  constructor() {}
+
+  ngOnInit() {}
 
 }

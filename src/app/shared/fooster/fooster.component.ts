@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoosterComponent implements OnInit {
 
-  constructor() { }
+  public title: string = 'Escrito por Disney'
 
-  ngOnInit() {
-  }
+  constructor() {}
+
+  ngOnInit() {}
 
 }
