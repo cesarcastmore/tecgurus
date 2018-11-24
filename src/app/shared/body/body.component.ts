@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Body } from '../../model/body';
 
 @Component({
@@ -12,12 +12,15 @@ export class BodyComponent implements OnInit {
 
   @Input() title_button: string;
 
+  @Output()  cambiarCuento: EventEmitter<boolean>= new EventEmitter<boolean>();
+
   constructor() {}
 
   ngOnInit() {}
 
   public onClick(){
-  	alert("Se hizo click");
+
+    this.cambiarCuento.emit(true);
   }
 
 }

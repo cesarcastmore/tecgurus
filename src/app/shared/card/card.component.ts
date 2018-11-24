@@ -13,17 +13,28 @@ export class CardComponent implements OnInit {
 
   public cuentos: Body[] = cuentos;
 
+  private cont: number=0;
+
 
   public card: Card = {
     header: { title: 'Cuentos' },
-    body: cuentos[0],
+    body: cuentos[this.cont],
     fooster: { title: 'Escrito por Disney' }
 
   };
 
 
-  constructor() {}
+  constructor() {
 
-  ngOnInit() {}
+  }
+
+  ngOnInit() {
+
+  }
+
+
+  public siguienteCuento(event:boolean){
+    alert(event);
+  }
 
 }
