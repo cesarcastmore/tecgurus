@@ -1,22 +1,22 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { Card } from '../../model/card';
-
+import { Card, Body } from '../../model';
+import { cuentos } from '../../data/cuentos';
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css'],
-  encapsulation:  ViewEncapsulation.Emulated
+  encapsulation: ViewEncapsulation.Emulated
 
 })
 export class CardComponent implements OnInit {
 
+  public cuentos: Body[] = cuentos;
+
+
   public card: Card = {
     header: { title: 'Cuentos' },
-    body: {
-      title: 'La bella y la Bestia',
-      description: 'Esta es una historia romatica de una linda mujer y un hombre en forma de lobo'
-    },
+    body: cuentos[0],
     fooster: { title: 'Escrito por Disney' }
 
   };
