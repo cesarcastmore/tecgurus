@@ -1,11 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Card } from '../../model/card';
 
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css']
+  styleUrls: ['./card.component.css'],
+  encapsulation: ViewEncapsulation.None
+
 })
 export class CardComponent implements OnInit {
 
@@ -18,7 +20,7 @@ export class CardComponent implements OnInit {
     fooster: { title: 'Escrito por Disney' }
 
   };
-  
+
 
   constructor() {}
 
