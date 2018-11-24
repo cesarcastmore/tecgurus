@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Header } from '../../model/header';
 
 @Component({
@@ -8,7 +8,7 @@ import { Header } from '../../model/header';
 })
 export class HeaderComponent implements OnInit {
 
-  public header: Header = {title: 'Cuentos'};
+  @Input('header') header: Header;
 
 
   constructor() {}
