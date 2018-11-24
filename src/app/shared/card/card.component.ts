@@ -30,6 +30,10 @@ export class CardComponent implements OnInit {
 
   ngOnInit() {
 
+    this.cont = Math.floor(Math.random() * 3);
+    this.card.body = this.cuentos[this.cont];
+
+
   }
 
 
