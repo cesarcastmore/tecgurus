@@ -13,7 +13,7 @@ export class CardComponent implements OnInit {
 
   public cuentos: Body[] = cuentos;
 
-  private cont: number=0;
+  private cont: number = 0;
 
 
   public card: Card = {
@@ -33,8 +33,17 @@ export class CardComponent implements OnInit {
   }
 
 
-  public siguienteCuento(event:boolean){
-    alert(event);
+  public siguienteCuento(onClick: boolean) {
+    this.cont += 1;
+
+    if (onClick)
+      if (this.cont == cuentos.length) 
+        this.cont = 0;
+      
+
+    this.card.body = this.cuentos[this.cont];
+
+
   }
 
 }
