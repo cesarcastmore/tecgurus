@@ -16,4 +16,8 @@ export class BodyComponent implements OnInit {
 
   ngOnInit() {}
 
+  public onClick(){
+  	alert("Se hizo click");
+  }
+
 }
