@@ -6,7 +6,7 @@ import { Card } from '../../model/card';
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.Native
 
 })
 export class CardComponent implements OnInit {
